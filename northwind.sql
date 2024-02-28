@@ -6741,3 +6741,12 @@ SELECT * FROM product;
 
 
 SELECT * FROM product_view;
+
+USE northwind;
+
+ALTER TABLE product ADD COLUMN p4 VARCHAR(20);
+
+ALTER TABLE product MODIFY COlUMN p4 VARCHAR(86);
+
+ALTER TABLE product DROP COLUMN IF EXISTS p4;
+
